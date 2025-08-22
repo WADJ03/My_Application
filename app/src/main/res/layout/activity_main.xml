@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create an RGB Color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <!-- Red -->
+    <EditText
+        android:id="@+id/redInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Red (2 hex chars)"
+        android:maxLength="2"/>
+
+    <!-- Green -->
+    <EditText
+        android:id="@+id/greenInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Green (2 hex chars)"
+        android:maxLength="2"/>
+
+    <!-- Blue -->
+    <EditText
+        android:id="@+id/blueInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Blue (2 hex chars)"
+        android:maxLength="2"/>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create RGB Color"/>
+
+    <!-- Color Preview -->
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
